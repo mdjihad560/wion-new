@@ -1,14 +1,14 @@
 /*---------- 03. Mobile Menu Active ----------*/
 $.fn.vsmobilemenu = function (options) {
     var opt = $.extend({
-        menuToggleBtn: ".largemenu-toggle",
-        bodyToggleClass: "largebody-visible",
-        subMenuClass: "largesubmenu",
-        subMenuParent: "largeitem-has-children",
-        subMenuParentToggle: "largeactive",
-        meanExpandClass: "largemean-expand",
-        appendElement: '<span class="largemean-expand"></span>',
-        subMenuToggleClass: "largeopen",
+        menuToggleBtn: ".wionmenu-toggle",
+        bodyToggleClass: "wionbody-visible",
+        subMenuClass: "wionsubmenu",
+        subMenuParent: "wionitem-has-children",
+        subMenuParentToggle: "wionactive",
+        meanExpandClass: "wionmean-expand",
+        appendElement: '<span class="wionmean-expand"></span>',
+        subMenuToggleClass: "wionopen",
         toggleSpeed: 400,
       },
       options
@@ -84,4 +84,4 @@ $.fn.vsmobilemenu = function (options) {
     });
   };
 
-  $(".largemenu-wrapper").vsmobilemenu();
+  $(".wionmenu-wrapper").vsmobilemenu();

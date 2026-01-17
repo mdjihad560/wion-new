@@ -9,25 +9,25 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
 
   /*--------------------------------------------------------------
   [Table of contents]
-  large HEADER TRIGER JS INIT
-  large HEADER STICKY MENU JS INIT
-  large PRELOADER JS INIT
-  large PROGRES CIRCLE JS INIT
-  large CTA SLIDER JS INIT
-  large CTA SLIDER JS INIT2
-  large TESTIMONIAL JS INIT
-  large HOVER REVEAL START JS INIT
-  large AOS ANIMATION JS INIT
-  large BRAND JS INIT
-  large BRAND JS INIT2
-  large TAB SLIDER JS INIT
-  large PORTFOLIO JS INIT
-  large MENU SIDEBAR JS INIT
-  large IMAGE EXPAND JS INIT
-  large TESTIMONA JS INIT2
-  large MAP JS INIT
+  WION HEADER TRIGER JS INIT
+  WION HEADER STICKY MENU JS INIT
+  WION PRELOADER JS INIT
+  WION PROGRES CIRCLE JS INIT
+  WION CTA SLIDER JS INIT
+  WION CTA SLIDER JS INIT2
+  WION TESTIMONIAL JS INIT
+  WION HOVER REVEAL START JS INIT
+  WION AOS ANIMATION JS INIT
+  WION BRAND JS INIT
+  WION BRAND JS INIT2
+  WION TAB SLIDER JS INIT
+  WION PORTFOLIO JS INIT
+  WION MENU SIDEBAR JS INIT
+  WION IMAGE EXPAND JS INIT
+  WION TESTIMONA JS INIT2
+  WION MAP JS INIT
   END IMAGE SCROLL ROTATE JS INIT
-  large GSAP IMAGE ANIMATION JS INIT
+  WION GSAP IMAGE ANIMATION JS INIT
   
   /*--------------------------------------------------------------
   CUSTOM PRE DEFINE FUNCTION
@@ -37,18 +37,18 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
     return this.length;
   };
   /*--------------------------------------------------------------
-  large HEADER TRIGER JS INIT
+  WION HEADER TRIGER JS INIT
   --------------------------------------------------------------*/
-  $(".largeheader-triger").on("click", function (e) {
-    $(".largesidemenu-column, .offcanvas-overlay").addClass("active");
+  $(".wionheader-triger").on("click", function (e) {
+    $(".wionsidemenu-column, .offcanvas-overlay").addClass("active");
     event.preventDefault(e);
   });
-  $(".largesidemenu-close, .offcanvas-overlay").on("click", function () {
-    $(".largesidemenu-column, .offcanvas-overlay").removeClass("active");
+  $(".wionsidemenu-close, .offcanvas-overlay").on("click", function () {
+    $(".wionsidemenu-column, .offcanvas-overlay").removeClass("active");
   });
 
   /*--------------------------------------------------------------
-  large STICKY MENU JS INIT
+  WION STICKY MENU JS INIT
   --------------------------------------------------------------*/
 
   var lastScroll = 0;
@@ -83,7 +83,7 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
   });
 
   /*--------------------------------------------------------------
-  large PROGRES CIRCLE JS INIT
+  WION PROGRES CIRCLE JS INIT
   --------------------------------------------------------------*/
 
   var progressPath = document.querySelector(".progress-wrap path");
@@ -118,9 +118,9 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
     return false;
   });
   /*--------------------------------------------------------------
-  large CTA SLIDER JS INIT
+  WION CTA SLIDER JS INIT
   --------------------------------------------------------------*/
-  var t_slider = $(".largecta-slider-init");
+  var t_slider = $(".wioncta-slider-init");
   if (t_slider.is_exist()) {
     t_slider.slick({
       slidesToShow: 1,
@@ -145,9 +145,9 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
     });
   }
   /*--------------------------------------------------------------
-  large CTA SLIDER JS INIT2
+  WION CTA SLIDER JS INIT2
   --------------------------------------------------------------*/
-  var t_slider2 = $(".largecta-slider-init2");
+  var t_slider2 = $(".wioncta-slider-init2");
   if (t_slider2.is_exist()) {
     t_slider2.slick({
       slidesToShow: 1,
@@ -174,7 +174,7 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
   }
 
   /*--------------------------------------------------------------
-  large TESTIMONIAL JS INIT
+  WION TESTIMONIAL JS INIT
   --------------------------------------------------------------*/
   var $carousel = $(".slick-slide-active").slick({
     slidesToShow: 3,
@@ -196,8 +196,8 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
     }]
   });
 
-  // large HOVER REVEAL START JS INIT
-  var hoverItem = document.querySelectorAll(".largehover-reveal-item");
+  // WION HOVER REVEAL START JS INIT
+  var hoverItem = document.querySelectorAll(".wionhover-reveal-item");
   function moveImage(e, hoverItem, index) {
     var item = hoverItem.getBoundingClientRect();
     var x = e.clientX - item.x;
@@ -213,7 +213,7 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
   });
 
   /*--------------------------------------------------------------
-  large AOS ANIMATION JS INIT
+  WION AOS ANIMATION JS INIT
   --------------------------------------------------------------*/
   AOS.init({
     once: true,
@@ -222,11 +222,11 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
   });
 
   /*--------------------------------------------------------------
-  large tp-text-invert-3
+  WION tp-text-invert-3
   --------------------------------------------------------------*/
 
-  function large_text_invert() {
-    var split_1 = new SplitText(".large_text_invert", {
+  function WION_text_invert() {
+    var split_1 = new SplitText(".WION_text_invert", {
       type: "lines"
     });
     split_1.lines.forEach(function (target) {
@@ -242,8 +242,8 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
       });
     });
   }
-  function large_text_invert_2() {
-    var split_2 = new SplitText(".large_text_invert_2", {
+  function WION_text_invert_2() {
+    var split_2 = new SplitText(".WION_text_invert_2", {
       type: "lines"
     });
     split_2.lines.forEach(function (target) {
@@ -260,15 +260,15 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
     });
   }
   $(function () {
-    large_text_invert();
-    large_text_invert_2();
+    WION_text_invert();
+    WION_text_invert_2();
   });
 
   /*--------------------------------------------------------------
-  large BRAND JS INIT
+  WION BRAND JS INIT
   --------------------------------------------------------------*/
 
-  var i_slider_data = $(".largebrand-slider-js-init");
+  var i_slider_data = $(".wionbrand-slider-js-init");
   if (i_slider_data.is_exist()) {
     i_slider_data.slick({
       slidesToShow: 3,
@@ -289,9 +289,9 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
   }
 
   /*--------------------------------------------------------------
-  large BRAND JS INIT2
+  WION BRAND JS INIT2
   --------------------------------------------------------------*/
-  var i_slider_data = $(".largebrand-slider-js-init2");
+  var i_slider_data = $(".wionbrand-slider-js-init2");
   if (i_slider_data.is_exist()) {
     i_slider_data.slick({
       slidesToShow: 3,
@@ -313,21 +313,21 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
   }
 
   /*--------------------------------------------------------------
-  large TAB SLIDER JS INIT
+  WION TAB SLIDER JS INIT
   --------------------------------------------------------------*/
   $("ul.tabs li").click(function () {
     var tab_id = $(this).attr("data-tab");
     $("ul.tabs li").removeClass("current");
-    $(".largetab-content").removeClass("current");
+    $(".wiontab-content").removeClass("current");
     $(this).addClass("current");
     $("#" + tab_id).addClass("current");
   });
 
   /*--------------------------------------------------------------
-  large PORTFOLIO JS INIT
+  WION PORTFOLIO JS INIT
   --------------------------------------------------------------*/
 
-  var i_slider_data = $(".largeportfolio-slider-js-init");
+  var i_slider_data = $(".wionportfolio-slider-js-init");
   if (i_slider_data.is_exist()) {
     i_slider_data.slick({
       slidesToShow: 3,
@@ -349,21 +349,21 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
   }
 
   /*--------------------------------------------------------------
-  large MENU SIDEBAR JS INIT
+  WION MENU SIDEBAR JS INIT
   --------------------------------------------------------------*/
-  $(".largeheader-barger").on("click", function (e) {
-    $(".largesidemenu-column2, .offcanvas-overlay").addClass("active");
+  $(".wionheader-barger").on("click", function (e) {
+    $(".wionsidemenu-column2, .offcanvas-overlay").addClass("active");
     event.preventDefault(e);
   });
-  $(".largesidemenu-close, .offcanvas-overlay").on("click", function () {
-    $(".largesidemenu-column2, .offcanvas-overlay").removeClass("active");
+  $(".wionsidemenu-close, .offcanvas-overlay").on("click", function () {
+    $(".wionsidemenu-column2, .offcanvas-overlay").removeClass("active");
   });
 
   /*--------------------------------------------------------------
-  large IMAGE EXPAND JS INIT
+  WION IMAGE EXPAND JS INIT
   --------------------------------------------------------------*/
 
-  var items = document.querySelectorAll(".largep-img-expand-wrap");
+  var items = document.querySelectorAll(".wionp-img-expand-wrap");
   if (items.length) {
     items.forEach(function (item) {
       item.addEventListener("mouseover", function () {
@@ -398,10 +398,10 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
   });
 
   /*--------------------------------------------------------------
-  large TESTIMONA JS INIT2
+  WION TESTIMONA JS INIT2
   --------------------------------------------------------------*/
 
-  var t_slider = $(".larget-slider-init2");
+  var t_slider = $(".wiont-slider-init2");
   if (t_slider.is_exist()) {
     t_slider.slick(_defineProperty(_defineProperty(_defineProperty({
       slidesToShow: 1,
@@ -414,7 +414,7 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
   }
 
   /*--------------------------------------------------------------
-  large MAP JS INIT
+  WION MAP JS INIT
   ------------------------------------------------------------*/
   var google_map = $("#map");
   if (google_map.is_exist()) {
@@ -525,9 +525,9 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
       var marker = new google.maps.Marker({
         position: new google.maps.LatLng(40.67, -73.94),
         map: map,
-        title: "large"
+        title: "WION"
       });
-      var contentString = '<div id="content">' + '<div id="tpw">' + "<h3>large" + "</div>";
+      var contentString = '<div id="content">' + '<div id="tpw">' + "<h3>WION" + "</div>";
       var infowindow = new google.maps.InfoWindow({
         content: contentString,
         maxWidth: 280
@@ -545,10 +545,10 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
   }
 
   /*===========================================
-    = large IMAGE SCROLL ROTATE JS INIT      =
+    = WION IMAGE SCROLL ROTATE JS INIT      =
   =============================================*/
 
-  var swiper = new Swiper(".largeabout-thumb-slider", {
+  var swiper = new Swiper(".wionabout-thumb-slider", {
     effect: "coverflow",
     loop: true,
     speed: 2500,
@@ -582,13 +582,13 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
   });
 
   /*===========================================
-    =    large GSAP IMAGE ANIMATION JS INIT      =
+    =    WION GSAP IMAGE ANIMATION JS INIT      =
   =============================================*/
 
   gsap.registerPlugin(ScrollTrigger);
   var tl = gsap.timeline({
     scrollTrigger: {
-      trigger: ".largeabout-animation-wraper",
+      trigger: ".wionabout-animation-wraper",
       start: "top top",
       end: "bottom bottom",
       scrub: 1,
@@ -623,7 +623,7 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
   }, 0);
 
   /*===========================================
-    =    large IMAGE SCROLL ROTATE JS INIT      =
+    =    WION IMAGE SCROLL ROTATE JS INIT      =
   =============================================*/
 
   gsap.registerPlugin(ScrollTrigger);
@@ -702,11 +702,11 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
 gsap.registerPlugin(ScrollTrigger);
 gsap.timeline({
   scrollTrigger: {
-    trigger: ".largehero-section3",
+    trigger: ".wionhero-section3",
     start: "top top",
     end: "+=2000",
     scrub: true,
-    pin: ".largehome-3-thumb-wrap"
+    pin: ".wionhome-3-thumb-wrap"
   }
 }).fromTo(".left-rotate img", {
   y: -350
