@@ -364,13 +364,13 @@
 .light-color .site-menu-main .nav-link-item {
   color: var(--white-color);
 }
-.wionheader2 .site-menu-main .nav-link-item {
+.largeheader2 .site-menu-main .nav-link-item {
   color: var(--heading-color2);
 }
-.wionheader4 .site-menu-main .nav-link-item {
+.largeheader4 .site-menu-main .nav-link-item {
   color: var(--heading-color3);
 }
-.wionheader5 .site-menu-main .nav-link-item {
+.largeheader5 .site-menu-main .nav-link-item {
   color: var(--light-color4);
 }
 
