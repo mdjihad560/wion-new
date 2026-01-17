@@ -4930,6 +4930,10 @@ button#large-newsletter-btn {
   background-color: var(--white-bg);
 }
 
+.mt-30 {
+  margin-top: 30px;
+}
+
 .largedefault-btn {
   padding: 17px 32px;
   font-weight: 700;
