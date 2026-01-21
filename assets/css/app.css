@@ -301,7 +301,7 @@ h6,
 h1,
 .h1 {
   font-size: 100px;
-  line-height: 1em;
+  line-height: 1.4em;
   letter-spacing: -2px;
   font-family: "SatoshiBlack";
 }
@@ -327,6 +327,7 @@ h1,
   h1,
   .h1 {
     font-size: 45px;
+    line-height: 1.25em;
   }
 }
 
@@ -357,7 +358,7 @@ h2,
 @media (max-width: 575px) {
   h2,
   .h2 {
-    font-size: 42px;
+    font-size: 36px;
   }
 }
 
@@ -1154,7 +1155,7 @@ a.white-color {
 
 .header-logo {
   text-align: left;
-  max-width: 200px;
+  max-width: 160px;
 }
 
 .largeheader-barger {
@@ -1482,6 +1483,10 @@ a.white-color {
   .footer-sticky {
     position: static;
   }
+}
+
+.largefooter-logo {
+  max-width: 160px;
 }
 
 /*1.2 components css*/
@@ -3577,8 +3582,8 @@ img.social-hide {
   position: absolute;
   top: 0;
   left: 0;
-  width: 416px;
-  height: 416px;
+  width: 300px;
+  height: 300px;
   opacity: 0;
   margin: -150px 0 0 -150px;
   overflow: hidden;
@@ -3980,8 +3985,34 @@ img.social-hide {
 }
 
 .hero-single-thumb {
-  margin-top: -60px;
+  margin-top: -70px;
   padding-bottom: 30px;
+}
+@media (max-width: 1399px) {
+  .hero-single-thumb {
+    margin-top: 30px;
+  }
+}
+
+.mt-minus {
+  z-index: 9;
+  position: relative;
+  margin-top: -40px;
+}
+@media (max-width: 991px) {
+  .mt-minus {
+    margin-top: -30px;
+  }
+}
+@media (max-width: 767px) {
+  .mt-minus {
+    margin-top: -20px;
+  }
+}
+@media (max-width: 575px) {
+  .mt-minus {
+    margin-top: -5px;
+  }
 }
 
 .largeabout-content {
@@ -4196,9 +4227,10 @@ img.social-hide {
 
 .largetitle {
   font-size: 80px;
-  line-height: 1em;
+  line-height: 1.4em;
   display: flex;
   gap: 15px;
+  margin-top: -24px;
   align-items: center;
   font-family: "SatoshiBold";
 }
@@ -4215,6 +4247,7 @@ img.social-hide {
 @media (max-width: 991px) {
   .largetitle {
     font-size: 42px;
+    margin-top: -5px;
   }
 }
 @media (max-width: 767px) {
@@ -4454,6 +4487,10 @@ button#large-newsletter-btn {
   position: absolute;
   right: 5px;
   top: 5px;
+  transition: all 0.4s;
+}
+button#large-newsletter-btn:hover {
+  background-color: var(--accent-bg);
 }
 
 .large-newsleeter-checkbox {
@@ -5012,7 +5049,7 @@ button#large-newsletter-btn {
 .largedefault-btn.largeheader-btn::before {
   content: "";
   position: absolute;
-  width: 155px;
+  width: 160px;
   height: 2px;
   bottom: 0;
   left: 0;
