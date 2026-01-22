@@ -2267,7 +2267,7 @@ a.white-color {
 }
 .largep-img-expand-wrap {
   width: 140px;
-  min-height: 550px;
+  min-height: 450px;
   background: center/cover no-repeat;
   align-items: flex-start;
   transition: flex 0.5s;
@@ -4489,8 +4489,18 @@ button#large-newsletter-btn {
   top: 5px;
   transition: all 0.4s;
 }
+button#large-newsletter-btn svg {
+  width: 24px;
+}
+button#large-newsletter-btn svg path {
+  transition: all 0.4s;
+  fill: var(--white-color);
+}
 button#large-newsletter-btn:hover {
   background-color: var(--accent-bg);
+}
+button#large-newsletter-btn:hover svg path {
+  fill: var(--heading-color);
 }
 
 .large-newsleeter-checkbox {
@@ -5046,10 +5056,13 @@ button#large-newsletter-btn:hover {
     display: inline-flex;
   }
 }
-.largedefault-btn.largeheader-btn::before {
+.largedefault-btn.largeheader-btn .btn-text {
+  position: relative;
+}
+.largedefault-btn.largeheader-btn .btn-text::before {
   content: "";
   position: absolute;
-  width: 160px;
+  width: 100%;
   height: 2px;
   bottom: 0;
   left: 0;
