@@ -2267,8 +2267,8 @@ a.white-color {
 }
 .largep-img-expand-wrap {
   width: 140px;
-  min-height: 450px;
-  background: center/cover no-repeat;
+  min-height: 480px;
+  background-size: cover;
   align-items: flex-start;
   transition: flex 0.5s;
   -webkit-transition: flex 0.5s;
@@ -2280,6 +2280,7 @@ a.white-color {
   transition: all 0.6s;
   padding: 30px;
   z-index: 0;
+  background-position: center top;
 }
 @media (max-width: 991px) {
   .largep-img-expand-wrap {
